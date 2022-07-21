@@ -10,11 +10,11 @@
 
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${LOGS}/AssetTracking.log</file>
+		<file>${AZURE_JAVA_APP_PATH}/assetTracking/logs/AssetTracking.log</file>
 		<rollingPolicy
 			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- daily rollover -->
-			<fileNamePattern>${LOGS}/AssetTracking.%d{yyyy-MM-dd}.log
+			<fileNamePattern>${AZURE_JAVA_APP_PATH}/assetTracking/logs/AssetTracking.%d{yyyy-MM-dd}.log
 			</fileNamePattern>
 			<!-- keep x days' worth of history -->
 			<maxHistory>15</maxHistory>
