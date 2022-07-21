@@ -38,6 +38,11 @@ public class ExternalFile1Application {
 
 		String detil = "Url: {}" + dataSource.getUrl() + " User name: {}" + dataSource.getUsername() + " Password: {}"
 				+ dataSource.getPassword();
+		
+		logger.info("Url: {}", dataSource.getUrl());
+		logger.info("User name: {}", dataSource.getUsername());
+		logger.info(" Password: {}" + dataSource.getPassword());
+
 
 		return detil;
 	}
